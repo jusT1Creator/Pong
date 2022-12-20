@@ -65,15 +65,17 @@ function moveBall(){
        
     }
     if(scoreLeft >= 4 || scoreRight >= 4){
+
         alert('game over!');
-        clearInterval(timer);
+        clearInterval(ballTimer);
     }
     
     scoreboard.innerHTML = scoreLeft + ":" + scoreRight;
-
+    
 }
 
-var timer=setInterval(moveBall, 10);
+var ballTimer=setInterval(moveBall, 10);
+
 
 function moveBats(){
     batLeftY+=changeYLeft;
@@ -92,11 +94,13 @@ function resetBall(leftOrRight){
     x = 845;
     y = 450;
     if(leftOrRight){
-        speedX = Math.random() * 3 * -1;
-        speedY = Math.random() * 3 * -1;
+        speedX = Math.random() * 2 * -1 -1;
+        speedY = Math.random() * 2 * -1 -1 ;
     }else{
-        speedX = Math.random() * 3;
-        speedY = Math.random() * 3;
+        speedX = Math.random() * 2 + 1;
+        speedY = Math.random() * 2 + 1;
     }
    
 }
+
+
