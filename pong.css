@@ -1,0 +1,38 @@
+#board{
+    position:absolute;
+    width: 1690px; 
+    height: 900px;
+    background-color: black;
+}
+#batleft{
+    position:absolute;
+    top: 400px;
+    left: 15px;
+    width: 10px;
+    height: 100px;
+    background-color: white;
+}
+#batright{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100px;
+    background-color: white;
+}
+#ball{
+    position: absolute;
+    top:450px;
+    left:845px;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: white;
+}
+
+#scoreboard{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    left: 845px;
+}
